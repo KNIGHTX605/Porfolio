@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lucky Jaxxon woods| High School Student</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+        <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body background="img/projeto-do-fundo-da-poligonal-azul-moderno_1055-1505.jpg">
+    <header>
+      <a href="index.html" id="logo">
+        <h1>Lucky Jaxxon Woods</h1>
+        <h2>Scotts Hill High School Student</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html" class="selected">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+     
+    <div id="wrapper">
+<div class="w3-content w3-section" style="max-width:500px">
+
+  <img class="mySlides w3-animate-fading" src="img/Dev.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img/Beta.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img/4.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img/5.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img/6.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="img/BR.jpg" style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 10000);    
+}
+</script>
+
+      <section class="secondary">
+        <h3>About</h3>
+        <p>I'm Lucky Jaxxon Woods! I enjoy gaming, drawing, reading, building robots and model kits, attending conventions, and almost anything computer related.
+        I am currently enjoying taking courses from Udemy in ultimate creature design and concept art and digital sketching.
+        I am also taking courses from Coursera and the California Institute for the Arts in video game design. Clubs that I participate in are Art Club, Beta, FBLA, and Student Council.
+        I am also active in community service where I volunteer at my local library every summer to help promote literacy with young children. 
+        I just really enjoy all things creative, helping others, and constantly learning.</p>
+      </section>
+      <footer>
+        
+        <a href="https://www.facebook.com/jaxx.woods"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+        <p>&copy; 2018 Lucky Jaxxon Woods</p>
+      </footer>
+    </div>
+  </body>
+</html>
